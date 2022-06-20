@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
         "projectName": "PDFGenerator",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\PDFGenerator\\PDFGenerator\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDFGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
