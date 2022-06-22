@@ -8,12 +8,24 @@
     ".NETCoreApp,Version=v6.0": {
       "PDFGenerator/1.0.0": {
         "dependencies": {
+          "BarCode": "2022.5.5918",
           "PDFsharp": "1.50.5147",
           "System.Drawing.Common": "6.0.0",
           "System.Text.Encoding.CodePages": "6.0.0"
         },
         "runtime": {
           "PDFGenerator.dll": {}
+        }
+      },
+      "BarCode/2022.5.5918": {
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IronBarCode.dll": {
+            "assemblyVersion": "2022.5.0.5918",
+            "fileVersion": "2022.5.0.5918"
+          }
         }
       },
       "Microsoft.Win32.SystemEvents/6.0.0": {
@@ -90,6 +102,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BarCode/2022.5.5918": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9TpKBc5E+q/kErKUJexE1SmQ9qjRt8U86lLBPvjAyn+bglsAH1LGkMnbhNXvSbFmgmk/oULjMIAd7mtBs+b4Iw==",
+      "path": "barcode/2022.5.5918",
+      "hashPath": "barcode.2022.5.5918.nupkg.sha512"
     },
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "type": "package",
