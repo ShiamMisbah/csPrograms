@@ -9,6 +9,7 @@
       "PDFGenerator/1.0.0": {
         "dependencies": {
           "BarCode": "2022.5.5918",
+          "LINQtoCSV": "1.5.0",
           "PDFsharp": "1.50.5147",
           "System.Drawing.Common": "6.0.0",
           "System.Text.Encoding.CodePages": "6.0.0"
@@ -25,6 +26,14 @@
           "lib/netstandard2.0/IronBarCode.dll": {
             "assemblyVersion": "2022.5.0.5918",
             "fileVersion": "2022.5.0.5918"
+          }
+        }
+      },
+      "LINQtoCSV/1.5.0": {
+        "runtime": {
+          "lib/net35/LINQtoCSV.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           }
         }
       },
@@ -109,6 +118,13 @@
       "sha512": "sha512-9TpKBc5E+q/kErKUJexE1SmQ9qjRt8U86lLBPvjAyn+bglsAH1LGkMnbhNXvSbFmgmk/oULjMIAd7mtBs+b4Iw==",
       "path": "barcode/2022.5.5918",
       "hashPath": "barcode.2022.5.5918.nupkg.sha512"
+    },
+    "LINQtoCSV/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R3FWKGV326oWhEIJFgBQvJyeEs7ylViAMjTYs1YetwVdGfbDGf465xfLaxUxePwF/8Tcajt/1Llj3exhYL2xhQ==",
+      "path": "linqtocsv/1.5.0",
+      "hashPath": "linqtocsv.1.5.0.nupkg.sha512"
     },
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "type": "package",

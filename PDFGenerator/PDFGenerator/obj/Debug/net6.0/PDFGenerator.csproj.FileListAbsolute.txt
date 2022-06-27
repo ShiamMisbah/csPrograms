@@ -49,3 +49,4 @@ C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\PDFGenerator\PDFGenerator\obj
 C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\PDFGenerator\PDFGenerator\obj\Debug\net6.0\PDFGenerator.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\PDFGenerator\PDFGenerator\obj\Debug\net6.0\ref\PDFGenerator.dll
 C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\PDFGenerator\PDFGenerator\bin\Debug\net6.0\IronBarCode.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\PDFGenerator\PDFGenerator\bin\Debug\net6.0\LINQtoCSV.dll
