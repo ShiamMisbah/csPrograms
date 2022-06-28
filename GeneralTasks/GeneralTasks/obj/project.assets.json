@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj",
       "projectName": "GeneralTasks",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\GeneralTasks\\GeneralTasks\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\GeneralTasks\\GeneralTasks\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

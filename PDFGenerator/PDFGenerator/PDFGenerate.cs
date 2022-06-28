@@ -24,7 +24,7 @@ namespace PDFGenerator
             XFont FontID = new XFont("Arial", 24);
             XFont FontName = new XFont("Arial", 18);
             XFont Font = new XFont("Arial", 15);
-            XFont BanglaFont = new XFont("Nirmala UI", 12);
+            XFont BanglaFont = new XFont("SolaimanLipi", 12);
             // Margin Set ups
             int LeftM = 50;
             int RightM = 50;
@@ -40,7 +40,7 @@ namespace PDFGenerator
                 new XPoint(LeftM, 150));
             gfx.DrawString("Full Name: " + Convert.ToString(Name), FontName, XBrushes.Black,
                 new XPoint(LeftM, 200));
-            gfx.DrawString("পুর নাম: আব্দুর রউফ", new XFont("SolaimanLipi", 15), XBrushes.Black,
+            gfx.DrawString("নাম: আব্দুর রউফ", new XFont("SolaimanLipi", 15), XBrushes.Black,
                 new XPoint(LeftM, 225));
 
             gfx.DrawString("Phone Number: "+Convert.ToString(Phone), Font, XBrushes.Black,
@@ -49,11 +49,11 @@ namespace PDFGenerator
                 new XPoint(LeftM, BottomInfoStart + VerticalGap));
             gfx.DrawString("Father's Name: Asfjkrhgg Uddin ", Font, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap*2));
-            gfx.DrawString("পিতার নাম: Asfjkrhgg Uddin ", BanglaFont, XBrushes.Black,
+            gfx.DrawString("বাবার নাম: আহি উদ্দিন ", BanglaFont, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap*3));
             gfx.DrawString("Mother's Name: ", Font, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap*4));
-            gfx.DrawString("মাতার নাম: ", BanglaFont, XBrushes.Black,
+            gfx.DrawString("মাতার নাম: আমেনা বেগম", BanglaFont, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap*5));
             gfx.DrawString("Date of Birth: ", Font, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap*6));
