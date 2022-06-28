@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\bin\Debug\net6.0\GeneralTasks.exe
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\bin\Debug\net6.0\GeneralTasks.deps.json
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\bin\Debug\net6.0\GeneralTasks.runtimeconfig.json
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\bin\Debug\net6.0\GeneralTasks.dll
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\bin\Debug\net6.0\GeneralTasks.pdb
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.dll
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\obj\Debug\net6.0\refint\GeneralTasks.dll
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.pdb
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Shiam\C#\GeneralTasks\GeneralTasks\obj\Debug\net6.0\ref\GeneralTasks.dll
