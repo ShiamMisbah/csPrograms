@@ -75,4 +75,4 @@ static void FindOccurence(int[] arr, int t, int k)
 
 int[] l = {2,1,5,3,13,5,6,5,2,4,7,2,3,9,8,4,1,2,5};
 
-FindOccurence(l, 130, 2);
+FindOccurence(l, 5, 2);

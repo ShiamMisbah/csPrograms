@@ -1,5 +1,14 @@
-ID,Name,Phone,Email,Candidate
-215,anna,124567895,anna@gmail.com,TRUE
-216,julie,124567896,julie@gmail.com,FALSE
-217,rakib,124567897,rakib@gmail.com,TRUE
-
+ID,Name,Phone,Email,Father Name,Mother Name,Date of Birth,Address,Religion,Nationality
+517955,anna,124567895,anna@gmail.com,Kholil,Rahima,30/12/2018,"College Road, Habiganj",Islam,Nepal
+405681,julie,124567896,julie@gmail.com,Mithu,Rahima,28/07/2003,"College Road, Habiganj",Christian,India
+677774,rakib,124567897,rakib@gmail.com,Kholil,Morjina,18/09/2009,Narail,No Religion,Nepal
+850738,shiam,124567898,shiam@gmail.com,Kholil,Rashida,11/06/2003,"CNB, Rajhshahi",Islam,Nepal
+476157,meena,124567899,meena@gmail.com,Rahim,Rashida,24/07/2003,"College Road, Habiganj",Buddhism,Bhutan
+712845,ritu,124567900,ritu@gmail.com,Kholil,Kholila,21/03/2011,"College Road, Habiganj",Buddhism,Nepal
+547626,turjo,124567901,turjo@gmail.com,Mithu,Mithi,03/12/2000,Narail,Christian,Pakistan
+706953,salman,124567902,salman@gmail.com,Mithu,Rahima,25/03/2002,"CNB, Rajhshahi",Islam,India
+279021,hashim,124567903,hashim@gmail.com,Mojnu,Kholila,04/03/2001,"Dhanmondi, Dhaka",No Religion,Bangladesh
+805565,choudhury,124567904,choudhury@gmail.com,Kholil,Rahima,12/03/1995,"College Road, Habiganj",Christian,Nepal
+967274,monica,124567905,monica@gmail.com,Rashid,Kholila,22/06/1998,Narail,Islam,Bangladesh
+393718,jess,124567906,jess@gmail.com,Kholil,Mithi,25/11/2013,"Mirpur, Dhaka",No Religion,Pakistan
+830692,hart,124567907,hart@gmail.com,Rashid,Rashida,29/04/2002,"CNB, Rajhshahi",Hindu,Pakistan

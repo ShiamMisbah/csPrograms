@@ -21,8 +21,18 @@ namespace PDFGenerator
         [CsvColumn(Name = "Email")]
         public string email { get; set; }
 
-        [CsvColumn(Name = "Candidate")]
-        public bool IsCandidate { get; set; }
+        [CsvColumn(Name = "Father Name")]
+        public string FatherName { get; set; }
+        [CsvColumn(Name = "Mother Name")]
+        public string MotherName { get; set; }
+        [CsvColumn (Name = "Date of Birth")]
+        public string DateOfBirth { get; set; }
+        [CsvColumn(Name = "Address")]
+        public string Address { get; set; }
+        [CsvColumn(Name = "Religion")]
+        public string Religion { get; set; }
+        [CsvColumn(Name = "Nationality")]
+        public string Nationality { get; set; }
 
     }
 }

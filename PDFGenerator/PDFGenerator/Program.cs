@@ -39,7 +39,7 @@ static void ReadFile()
 
     foreach (var studentInfo in student)
     {
-        PDFGenerator.PDFGenerate.BarcodePDFGenerator(dir, studentInfo.ID, studentInfo.Name, studentInfo.Phone, studentInfo.email, studentInfo.IsCandidate);
+        PDFGenerator.PDFGenerate.BarcodePDFGenerator(dir, studentInfo.ID, studentInfo.Name, studentInfo.Phone, studentInfo.email, studentInfo.FatherName, studentInfo.MotherName, studentInfo.DateOfBirth, studentInfo.Address, studentInfo.Religion, studentInfo.Nationality);
     };
 }
 

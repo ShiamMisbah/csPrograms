@@ -11,10 +11,9 @@ namespace PDFGenerator
     class PDFGenerate
     {
         
-        public static void BarcodePDFGenerator(string SrcDir, int ID, string Name, int Phone, string Email, bool IsCandidate)
+        public static void BarcodePDFGenerator(string SrcDir, int ID, string Name, int Phone, string Email, string FatherName, string MotherName, string DateOfBirth, string Address, string Religion, string Nationality)
         {
-            Random random = new Random();
-            string BarNum = Convert.ToString(random.Next(10000000));
+            
             PdfDocument document = new PdfDocument();
             //New page
             PdfPage page = document.AddPage();
@@ -40,37 +39,28 @@ namespace PDFGenerator
                 new XPoint(LeftM, 150));
             gfx.DrawString("Full Name: " + Convert.ToString(Name), FontName, XBrushes.Black,
                 new XPoint(LeftM, 200));
-            gfx.DrawString("নাম: আব্দুর রউফ", new XFont("SolaimanLipi", 15), XBrushes.Black,
-                new XPoint(LeftM, 225));
 
             gfx.DrawString("Phone Number: "+Convert.ToString(Phone), Font, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart));
             gfx.DrawString("Email Address: "+Convert.ToString(Email), Font, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap));
-            gfx.DrawString("Father's Name: Asfjkrhgg Uddin ", Font, XBrushes.Black,
+            gfx.DrawString("Father's Name: "+ Convert.ToString(FatherName), Font, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap*2));
-            gfx.DrawString("বাবার নাম: আহি উদ্দিন ", BanglaFont, XBrushes.Black,
+            gfx.DrawString("Mother's Name: "+ Convert.ToString(MotherName), Font, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap*3));
-            gfx.DrawString("Mother's Name: ", Font, XBrushes.Black,
+            gfx.DrawString("Date of Birth: "+ Convert.ToString(DateOfBirth), Font, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap*4));
-            gfx.DrawString("মাতার নাম: আমেনা বেগম", BanglaFont, XBrushes.Black,
+            gfx.DrawString("Address: "+ Convert.ToString(Address), Font, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap*5));
-            gfx.DrawString("Date of Birth: ", Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*6));
-            gfx.DrawString("Address: Dhanmondi, Dhaka", Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*7));
-            gfx.DrawString("ঠিকানা: Dhanmondi, Dhaka", BanglaFont, XBrushes.Black,
+            gfx.DrawString("Religion: "+ Convert.ToString(Religion), Font, XBrushes.Black,
+                new XPoint(LeftM, BottomInfoStart + VerticalGap*7));           
+            gfx.DrawString("Nationality: "+ Convert.ToString(Nationality), Font, XBrushes.Black,
                 new XPoint(LeftM, BottomInfoStart + VerticalGap*8));
-            gfx.DrawString("Parmanent Address: Rangpur, Bangladesh", Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*9));
-            gfx.DrawString("Religion: Hindu", Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*10));           
-            gfx.DrawString("Nationality: Bangladeshi", Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*11));
 
             XImage ImgProfile = XImage.FromFile(@"C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\PDFGenerator\PDF\Images\shk_old.png");
             gfx.DrawImage(ImgProfile, 400, TopM-20,150,175);
 
+            string BarNum = Convert.ToString(ID);
             XImage ImgBarcode = XImage.FromFile(BarcodeGenerator.GenerateBarcode(BarNum, SrcDir));
             gfx.DrawImage(ImgBarcode, 400, 700,150,50);
             document.Save(SrcDir + ID + ".pdf");
