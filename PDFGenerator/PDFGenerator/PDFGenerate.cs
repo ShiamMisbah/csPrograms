@@ -20,19 +20,18 @@ namespace PDFGenerator
             //graphics and stuffs
             XGraphics gfx = XGraphics.FromPdfPage(page);
             //font
-            XFont FontID = new XFont("Arial", 20);
-            XFont FontName = new XFont("Arial", 18);
-            XFont Font = new XFont("Arial", 15);
-            XFont BanglaFont = new XFont("SolaimanLipi", 12);
-            XFont HeadingFont = new XFont("Arial", 28);
+            XFont FontID = new XFont("Arial", 16);
+            XFont FontName = new XFont("Arial", 16);
+            XFont Font = new XFont("Arial", 14);
+            XFont HeadingFont = new XFont("Arial", 24);
 
             //Margin Set ups
             int LeftM = 50;
             int RightM = 50;
-            int TopM = 300;
-            int BottomM = 150;
-            int BottomInfoStart = 320;
+            int TopM = 160;
+            int BottomInfoStart = TopM + 20;
             int VerticalGap = 30;
+            int LogoSize = 75;
             int LeftColumnStartX = LeftM;
             int LeftColumnWidth = 125;
             int RightColumnStartX = LeftColumnStartX + LeftColumnWidth;
@@ -42,13 +41,13 @@ namespace PDFGenerator
 
             //Logo
             XImage Logo = XImage.FromFile(@"C:\Users\Admin\Desktop\Shiam\csPrograms\PDFGenerator\PDF\Images\login_logo.jpg");
-            gfx.DrawImage(Logo, page.Width/2 - 50, 25, 100, 100);
+            gfx.DrawImage(Logo, LeftM, 25, LogoSize, LogoSize);
             //Heading
-            gfx.DrawRectangle(XBrushes.LightGray, 0, 200, page.Width, 35);
-            gfx.DrawString("PUBLIC WORKS DEPARTMENT", HeadingFont, XBrushes.Black, new XPoint(LeftM+50, 175));
+            gfx.DrawString("PUBLIC WORKS DEPARTMENT", HeadingFont, XBrushes.Black, new XPoint(LeftM+120, 35 + LogoSize/2));
             //Admit Card
-            gfx.DrawString("ADMIT CARD", new XFont("Arial", 22), XBrushes.Black, new XPoint(LeftM+190, 225));
-            int TableStartY = 300;
+            gfx.DrawRectangle(XBrushes.LightGray, 0, 110, page.Width, 35);
+            gfx.DrawString("ADMIT CARD", new XFont("Arial", 22), XBrushes.Black, new XPoint(LeftM+190, 135));
+            int TableStartY = TopM;
             int TableCellHeight = 30;
             for (int i = 0; i < 10; i++)
             {
@@ -114,9 +113,11 @@ namespace PDFGenerator
             XImage ImgProfile = XImage.FromFile(@"C:\Users\Admin\Desktop\Shiam\csPrograms\PDFGenerator\PDF\Images\shk_old.png");
             gfx.DrawImage(ImgProfile, page.Width - RightM - 100, TopM, 100, 125);
 
+            int BarCodeWidth = 200;
+
             string BarNum = Convert.ToString(ID);
             XImage ImgBarcode = XImage.FromFile(BarcodeGenerator.GenerateBarcode(BarNum, SrcDir));
-            gfx.DrawImage(ImgBarcode, page.Width - RightM - 110, 450, 120, 50);
+            gfx.DrawImage(ImgBarcode, page.Width/2-BarCodeWidth/2, 490, BarCodeWidth, 50);
 
             //XPen pen = new XPen(XColors.Black, 1);
             //gfx.DrawRectangle(pen, 10, 0, 100, 60);
