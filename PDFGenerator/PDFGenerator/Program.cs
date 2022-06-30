@@ -24,7 +24,7 @@ ReadFile();
 
 static void ReadFile()
 {
-    string dir = "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDF\\";
+    string dir = @"C:\Users\Admin\Desktop\Shiam\csPrograms\PDFGenerator\PDF\";
 
     var csvFileDescription = new CsvFileDescription
     {
@@ -35,12 +35,18 @@ static void ReadFile()
     };
 
     var csvContext = new CsvContext();
-    var student = csvContext.Read<StudentInfo>(@"C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\PDFGenerator\PDF\students.csv", csvFileDescription);
+    var student = csvContext.Read<StudentInfo>(@"C:\Users\Admin\Desktop\Shiam\csPrograms\PDFGenerator\PDF\students.csv", csvFileDescription);
+    
+    List<StudentClass> studentClassesList = new List<StudentClass>();   
 
     foreach (var studentInfo in student)
     {
+        //studentClassesList.Add(new StudentClass(studentInfo.ID, studentInfo.Name, studentInfo.Phone, studentInfo.email, studentInfo.FatherName, studentInfo.MotherName, studentInfo.DateOfBirth, studentInfo.Address, studentInfo.Religion, studentInfo.Nationality));
         PDFGenerator.PDFGenerate.BarcodePDFGenerator(dir, studentInfo.ID, studentInfo.Name, studentInfo.Phone, studentInfo.email, studentInfo.FatherName, studentInfo.MotherName, studentInfo.DateOfBirth, studentInfo.Address, studentInfo.Religion, studentInfo.Nationality);
     };
+
+    //Console.WriteLine(studentClassesList[0].Religion);
+
 }
 
 
