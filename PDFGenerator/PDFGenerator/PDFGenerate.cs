@@ -60,29 +60,56 @@ namespace PDFGenerator
             int RightColumnM = RightColumnStartX + 10;
 
             //writing text
-            //gfx.DrawString("ID: "+ Convert.ToString(ID), FontID, XBrushes.Black,
-            //    new XPoint(LeftM, TopM));
-            //gfx.DrawString("Full Name: " + Convert.ToString(Name), FontName, XBrushes.Black,
-            //    new XPoint(LeftM, TopM+30));
-
-            gfx.DrawString("Phone Number: "+Convert.ToString(Phone), Font, XBrushes.Black,
-                new XPoint(LeftM+10, BottomInfoStart));
-            gfx.DrawString("Email Address: "+Convert.ToString(Email), Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap));
-            gfx.DrawString("Father's Name: "+ Convert.ToString(FatherName), Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*2));
-            gfx.DrawString("Mother's Name: "+ Convert.ToString(MotherName), Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*3));
-            gfx.DrawString("Date of Birth: "+ Convert.ToString(DateOfBirth), Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*4));
-            gfx.DrawString("Address: "+ Convert.ToString(Address), Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*5));
-            gfx.DrawString("Religion: "+ Convert.ToString(Religion), Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*6));
-            gfx.DrawString("Nationality: "+ Convert.ToString(Nationality), Font, XBrushes.Black,
-                new XPoint(LeftM, BottomInfoStart + VerticalGap*7));
-
+            gfx.DrawString("ID: ", FontID, XBrushes.Black,
+                new XPoint(LeftColumnM, BottomInfoStart));
+            gfx.DrawString(Convert.ToString(ID), FontID, XBrushes.Black, 
+                new XPoint(RightColumnM, BottomInfoStart));
             
+            gfx.DrawString("Full Name: ", FontName, XBrushes.Black,
+                new XPoint(LeftColumnM, BottomInfoStart + VerticalGap));
+            gfx.DrawString(Convert.ToString(Name), FontName, XBrushes.Black,
+                new XPoint(RightColumnM, BottomInfoStart + VerticalGap));
+
+            gfx.DrawString("Phone Number: ", Font, XBrushes.Black,
+                new XPoint(LeftColumnM, BottomInfoStart+ VerticalGap*2));
+            gfx.DrawString(Convert.ToString(Phone), Font, XBrushes.Black,
+                new XPoint(RightColumnM, BottomInfoStart+ VerticalGap*2));
+
+            gfx.DrawString("Email Address: ", Font, XBrushes.Black,
+                new XPoint(LeftColumnM, BottomInfoStart + VerticalGap*3));
+            gfx.DrawString(Convert.ToString(Email), Font, XBrushes.Black,
+                new XPoint(RightColumnM, BottomInfoStart + VerticalGap*3));
+
+            gfx.DrawString("Father's Name: ", Font, XBrushes.Black,
+                new XPoint(LeftColumnM, BottomInfoStart + VerticalGap*4));
+            gfx.DrawString(Convert.ToString(FatherName), Font, XBrushes.Black,
+                new XPoint(RightColumnM, BottomInfoStart + VerticalGap*4));
+
+            gfx.DrawString("Mother's Name: ", Font, XBrushes.Black,
+                new XPoint(LeftColumnM, BottomInfoStart + VerticalGap*5));
+            gfx.DrawString(Convert.ToString(MotherName), Font, XBrushes.Black,
+                new XPoint(RightColumnM, BottomInfoStart + VerticalGap*5));
+
+            gfx.DrawString("Date of Birth: ", Font, XBrushes.Black,
+                new XPoint(LeftColumnM, BottomInfoStart + VerticalGap*6));
+            gfx.DrawString(Convert.ToString(DateOfBirth), Font, XBrushes.Black,
+                new XPoint(RightColumnM, BottomInfoStart + VerticalGap*6));
+
+            gfx.DrawString("Address: ", Font, XBrushes.Black,
+                new XPoint(LeftColumnM, BottomInfoStart + VerticalGap*7));
+            gfx.DrawString(Convert.ToString(Address), Font, XBrushes.Black,
+                new XPoint(RightColumnM, BottomInfoStart + VerticalGap*7));
+
+            gfx.DrawString("Religion: ", Font, XBrushes.Black,
+                new XPoint(LeftColumnM, BottomInfoStart + VerticalGap*8));
+            gfx.DrawString(Convert.ToString(Religion), Font, XBrushes.Black,
+                new XPoint(RightColumnM, BottomInfoStart + VerticalGap*8));
+
+            gfx.DrawString("Nationality: ", Font, XBrushes.Black,
+                new XPoint(LeftColumnM, BottomInfoStart + VerticalGap*9));
+            gfx.DrawString(Convert.ToString(Nationality), Font, XBrushes.Black,
+                new XPoint(RightColumnM, BottomInfoStart + VerticalGap*9));
+
 
             XImage ImgProfile = XImage.FromFile(@"C:\Users\Admin\Desktop\Shiam\csPrograms\PDFGenerator\PDF\Images\shk_old.png");
             gfx.DrawImage(ImgProfile, page.Width - RightM - 100, TopM, 100, 125);
