@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YfsevBT2tqFQzozCVuyJ/FTpabgIoN04wWcuBm7/hiJeTfe5aRNTbH3tHRfPOoVegzuTi8Q1Z+Y5j+m1QWC9hA==",
+  "dgSpecHash": "RGrLFiS1nDFGtXcvaOoznE3H65JVznZ5jeUGxHvrpqMZoMZ209h0WlwRluhAvEULPUHDdOvWFi5pkbfj9x3TXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Shiam\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\ironxl.excel\\2022.6.6825\\ironxl.excel.2022.6.6825.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\bin\Debug\net6.0\ExcelTask.exe
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\bin\Debug\net6.0\ExcelTask.deps.json
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\bin\Debug\net6.0\ExcelTask.runtimeconfig.json
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\bin\Debug\net6.0\ExcelTask.dll
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\bin\Debug\net6.0\ref\ExcelTask.dll
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\bin\Debug\net6.0\ExcelTask.pdb
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\bin\Debug\net6.0\IronXL.dll
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\obj\Debug\net6.0\ExcelTask.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\obj\Debug\net6.0\ExcelTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\obj\Debug\net6.0\ExcelTask.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\obj\Debug\net6.0\ExcelTask.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\obj\Debug\net6.0\ExcelTask.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\obj\Debug\net6.0\ExcelTask.csproj.CopyComplete
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\obj\Debug\net6.0\ExcelTask.dll
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\obj\Debug\net6.0\ref\ExcelTask.dll
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\obj\Debug\net6.0\ExcelTask.pdb
+C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\ExcelTask\obj\Debug\net6.0\ExcelTask.genruntimeconfig.cache

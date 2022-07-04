@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ExcelTask/1.0.0": {
+        "dependencies": {
+          "IronXL.Excel": "2022.6.6825"
+        },
+        "runtime": {
+          "ExcelTask.dll": {}
+        }
+      },
+      "IronXL.Excel/2022.6.6825": {
+        "runtime": {
+          "lib/netstandard2.0/IronXL.dll": {
+            "assemblyVersion": "2022.6.0.6825",
+            "fileVersion": "2022.6.0.6825"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExcelTask/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IronXL.Excel/2022.6.6825": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mkOKo7qlKMqABMb0NN30n7B06s4g5+4KTtymjhj5KHtYiIfDLzp7Hw39z66jqd4r3PVE/t0BNTRXM+FIRVHWZQ==",
+      "path": "ironxl.excel/2022.6.6825",
+      "hashPath": "ironxl.excel.2022.6.6825.nupkg.sha512"
+    }
+  }
+}

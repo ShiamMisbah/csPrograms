@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\Shiam\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Shiam\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Shiam\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj",
         "projectName": "GeneralTasks",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\GeneralTasks\\GeneralTasks\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Shiam\\csPrograms\\GeneralTasks\\GeneralTasks\\GeneralTasks.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Shiam\\csPrograms\\GeneralTasks\\GeneralTasks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "IronXL.Excel": {
+              "target": "Package",
+              "version": "[2022.6.6825, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
