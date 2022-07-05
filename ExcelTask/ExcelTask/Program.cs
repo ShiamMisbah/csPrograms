@@ -1,35 +1,35 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using IronXL;
 using System.Linq;
+var watch = new System.Diagnostics.Stopwatch();
+watch.Start();
 
-WorkBook WB = WorkBook.Load(@"C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\DataSet\TestCase1.xlsx");
+WorkBook WB = WorkBook.Load(@"C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\DataSet\Recruit_Applicants.xlsx");
 WorkSheet WS = WB.GetWorkSheet("Sheet1");
+Console.WriteLine("Worksheet Read: {0}", watch.ElapsedMilliseconds);
+Console.WriteLine("Enter initial value: ");
+string Initial = "F"+Console.ReadLine();
+Console.WriteLine("Enter Final value: ");
+string Final = "F"+Console.ReadLine();
+string CellRange = Initial+":"+Final;
+Console.WriteLine(CellRange);
+var Range = WS.GetRange(CellRange);
 
 HashSet<int> list = new HashSet<int>();
 List<int> li2 = new List<int>();
 
-var watch = new System.Diagnostics.Stopwatch();
-watch.Start();
-int CellValue;
-
-for (int i = 1; i < 200; i++)
+foreach (var cell in Range)
 {
-    CellValue = WS.Columns[5].Rows[i].Int32Value;
-    if (!list.Add(CellValue))
+    if (!list.Add(cell.Int32Value))
     {
-        li2.Add(CellValue);
+        Console.WriteLine("The Duplicate are: {0}", cell.Int32Value);
     }
-
 }
 
 
-for (int i = 0; i < li2.Count; i++)
-{
-    Console.WriteLine("{0} is Duplicate", li2[i]);
-}
 
 watch.Stop();
 
-Console.WriteLine("Execution Time: {0}", watch.ElapsedMilliseconds);
+Console.WriteLine("Final Execution Time: {0}", watch.ElapsedMilliseconds);
 
 
