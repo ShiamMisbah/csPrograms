@@ -9,30 +9,35 @@ namespace PDFGenerator
 {
     class StudentInfo
     {
-        [CsvColumn(Name = "ID")]
-        public int ID { get; set; }
+        [CsvColumn(Name = "ApplicationCode")]
+        public int ApplicationCode { get; set; }
 
         [CsvColumn(Name = "Name")]
         public string Name { get; set; }
 
-        [CsvColumn(Name = "Phone")]
-        public int Phone { get; set; }
+        [CsvColumn(Name = "Mobile")]
+        public int Mobile { get; set; }
 
         [CsvColumn(Name = "Email")]
-        public string email { get; set; }
+        public string Email { get; set; }
 
-        [CsvColumn(Name = "Father Name")]
-        public string FatherName { get; set; }
-        [CsvColumn(Name = "Mother Name")]
-        public string MotherName { get; set; }
-        [CsvColumn (Name = "Date of Birth")]
+        //[CsvColumn(Name = "Father Name")]
+        //public string FatherName { get; set; }
+        //[CsvColumn(Name = "Mother Name")]
+        //public string MotherName { get; set; }
+        [CsvColumn (Name = "DateOfBirth")]
         public string DateOfBirth { get; set; }
-        [CsvColumn(Name = "Address")]
-        public string Address { get; set; }
-        [CsvColumn(Name = "Religion")]
-        public string Religion { get; set; }
-        [CsvColumn(Name = "Nationality")]
-        public string Nationality { get; set; }
+
+        [CsvColumn (Name = "Title")]
+        public string Title { get; set; }
+        [CsvColumn(Name = "DocumentName")]
+        public string DocumentName { get; set; }
+        //[CsvColumn(Name = "Address")]
+        //public string Address { get; set; }
+        //[CsvColumn(Name = "Religion")]
+        //public string Religion { get; set; }
+        //[CsvColumn(Name = "Nationality")]
+        //public string Nationality { get; set; }
 
     }
 }

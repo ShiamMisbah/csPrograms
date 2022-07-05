@@ -42,7 +42,7 @@ static void ReadFile()
     foreach (var studentInfo in student)
     {
         //studentClassesList.Add(new StudentClass(studentInfo.ID, studentInfo.Name, studentInfo.Phone, studentInfo.email, studentInfo.FatherName, studentInfo.MotherName, studentInfo.DateOfBirth, studentInfo.Address, studentInfo.Religion, studentInfo.Nationality));
-        PDFGenerator.PDFGenerate.BarcodePDFGenerator(dir, studentInfo.ID, studentInfo.Name, studentInfo.Phone, studentInfo.email, studentInfo.FatherName, studentInfo.MotherName, studentInfo.DateOfBirth, studentInfo.Address, studentInfo.Religion, studentInfo.Nationality);
+        PDFGenerator.PDFGenerate.BarcodePDFGenerator(dir, studentInfo.ApplicationCode, studentInfo.Name, studentInfo.Mobile, studentInfo.Email,studentInfo.DateOfBirth, studentInfo.DocumentName, studentInfo.Title);
     };
 
     //Console.WriteLine(studentClassesList[0].Religion);
