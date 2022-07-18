@@ -40,7 +40,7 @@ namespace PDFGenerator
             //XPen pen = new XPen(XColors.White, 0);
 
             //Logo
-            XImage Logo = XImage.FromFile(@"C:\Users\Admin\Desktop\Shiam\csPrograms\PDFGenerator\PDF\Images\login_logo.jpg");
+            XImage Logo = XImage.FromFile(@"C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\PDFGenerator\PDF\Images\login_logo.jpg");
             gfx.DrawImage(Logo, LeftM, 25, LogoSize, LogoSize);
             //Heading
             gfx.DrawString("PUBLIC WORKS DEPARTMENT", HeadingFont, XBrushes.Black, new XPoint(LeftM+120, 35 + LogoSize/2));
@@ -115,7 +115,7 @@ namespace PDFGenerator
             //    new XPoint(RightColumnM, BottomInfoStart + VerticalGap*9));
 
 
-            XImage ImgProfile = XImage.FromFile(@"C:\Users\Admin\Desktop\Shiam\csPrograms\PDFGenerator\PDF\Images\shk_old.png");
+            XImage ImgProfile = XImage.FromFile(@"C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\PDFGenerator\PDF\Images\shk_old.png");
             gfx.DrawImage(ImgProfile, page.Width - RightM - 100, TopM, 100, 125);
 
             int BarCodeWidth = 200;

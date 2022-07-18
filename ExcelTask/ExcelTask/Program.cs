@@ -4,7 +4,7 @@ using System.Data;
 var watch = new System.Diagnostics.Stopwatch();
 watch.Start();
 
-WorkBook WB = WorkBook.Load(@"C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\DataSet\Recruit_Applicants_Test.xlsx");
+WorkBook WB = WorkBook.Load(@"C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\ExcelTask\DataSet\Recruit_Applicants_Test2.xlsx");
 WorkSheet WS = WB.GetWorkSheet("Sheet1");
 WorkBook WNew = WorkBook.Create(ExcelFileFormat.XLSX);
 WorkSheet WN = WNew.CreateWorkSheet("UniqueID");
@@ -41,6 +41,12 @@ HashSet<string> list = new HashSet<string>();
 //List<IronXL.Cell> li2 = new List<IronXL.Cell>();
 int DuplicateCount = 0;
 int i = 2;
+WN["A" + 1].Value = WS["A" + 1].Value;
+WN["B" + 1].Value = WS["I" + 1].Value;
+WN["C" + 1].Value = WS["C" + 1].Value;
+WN["D" + 1].Value = WS["D" + 1].Value;
+WN["F" + 1].Value = WS["F" + 1].Value;
+WN["G" + 1].Value = WS["G" + 1].Value;
 foreach (var cell in Range)
 {
     if (!list.Add(cell.ToString()))
@@ -50,13 +56,16 @@ foreach (var cell in Range)
     }
     else
     {
+        Console.WriteLine(WS["C" + i].Value.ToString());
+        Console.WriteLine(" --v ");
+        Console.WriteLine(WS["C" + i].Value.GetType());
         //dt.Rows.Add(WS["A"+i].Value, WS["H"+i].Value, WS["C"+i].Value, WS["D"+i].Value, WS["F"+i].Value, WS["G"+i].Value);
-        WN["A"+i].Value = WS["A"+i].Value;
-        WN["B"+i].Value = WS["I"+i].Value;
-        WN["C"+i].Value = WS["C"+i].Value;
-        WN["D"+i].Value = WS["D"+i].Value;
-        WN["F"+i].Value = WS["F"+i].Value;
-        WN["G"+i].Value = WS["G"+i].Value;
+        //WN["A"+i].Value = WS["A"+i].Value;
+        //WN["B"+i].Value = WS["I"+i].Value;
+        //WN["C"+i].Value = WS["C"+i].Value;
+        //WN["D"+i].Value = WS["D"+i].Value;
+        //WN["F"+i].Value = WS["F"+i].Value;
+        //WN["G"+i].Value = WS["G"+i].Value;
     }
     i++;
 }
@@ -71,7 +80,7 @@ foreach (var cell in Range)
 Console.WriteLine("Total Duplicates: {0}", DuplicateCount);
 Console.WriteLine("Total Uniques: {0}", list.Count);
 
-WNew.SaveAs(@"C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\DataSet\Recruit_Applicants2.xlsx");
+WNew.SaveAs(@"C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\ExcelTask\DataSet\Recruit_Applicants2.xlsx");
 watch.Stop();
 
 Console.WriteLine("Final Execution Time: {0}", watch.ElapsedMilliseconds);
