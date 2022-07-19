@@ -4,10 +4,10 @@ using System.Data;
 var watch = new System.Diagnostics.Stopwatch();
 watch.Start();
 
-WorkBook WB = WorkBook.Load(@"C:\Users\Admin\Desktop\Shiam\csPrograms\ExcelTask\DataSet\Recruit_Applicants_Test.xlsx");
+WorkBook WB = WorkBook.Load(@"..\..\..\..\DataSet\Recruit_Applicants_Test.xlsx");
 WorkSheet WS = WB.GetWorkSheet("Sheet1");
-WorkBook WNew = WorkBook.Create(ExcelFileFormat.XLSX);
-WorkSheet WN = WNew.CreateWorkSheet("UniqueID");
+WorkBook WNew = WorkBook.Load(@"..\..\..\..\DataSet\Recruit_Applicants2.xlsx");
+WorkSheet WN = WNew.CreateWorkSheet("DuplicateDocument");
 
 //DataTable Datatb = WS.ToDataTable(true);
 
@@ -30,9 +30,9 @@ WorkSheet WN = WNew.CreateWorkSheet("UniqueID");
 
 
 Console.WriteLine("Worksheet Read: {0}", watch.ElapsedMilliseconds);
-string Initial = "F2";
+string Initial = "E2";
 Console.WriteLine("Enter Final value: ");
-string Final = "F"+Console.ReadLine();
+string Final = "E"+Console.ReadLine();
 string CellRange = Initial+":"+Final;
 Console.WriteLine(CellRange);
 var Range = WS.GetRange(CellRange);
@@ -45,18 +45,21 @@ foreach (var cell in Range)
 {
     if (!list.Add(cell.ToString()))
     {
-        Console.WriteLine("The Duplicate are: {0}", cell.ToString());
+        //Console.WriteLine("The Duplicate are: {0}", cell.ToString());
+        WN["A"+i].Value = WS["A"+i].Value;
+        WN["B"+i].Value = WS["I"+i].Value;
+        WN["C"+i].Value = WS["C"+i].Value;
+        WN["D"+i].Value = WS["D"+i].Value;
+        WN["E"+i].Value = WS["E"+i].Value;
+        WN["F"+i].Value = WS["F"+i].Value;
+        WN["G"+i].Value = WS["G"+i].Value;
+        Console.WriteLine(i);
         DuplicateCount++;
     }
     else
     {
         //dt.Rows.Add(WS["A"+i].Value, WS["H"+i].Value, WS["C"+i].Value, WS["D"+i].Value, WS["F"+i].Value, WS["G"+i].Value);
-        WN["A"+i].Value = WS["A"+i].Value;
-        WN["B"+i].Value = WS["I"+i].Value;
-        WN["C"+i].Value = WS["C"+i].Value;
-        WN["D"+i].Value = WS["D"+i].Value;
-        WN["F"+i].Value = WS["F"+i].Value;
-        WN["G"+i].Value = WS["G"+i].Value;
+        
     }
     i++;
 }

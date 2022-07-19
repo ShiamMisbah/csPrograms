@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\bin\Debug\net6.0\TemporaryTask1.exe
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\bin\Debug\net6.0\TemporaryTask1.deps.json
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\bin\Debug\net6.0\TemporaryTask1.runtimeconfig.json
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\bin\Debug\net6.0\TemporaryTask1.dll
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\bin\Debug\net6.0\ref\TemporaryTask1.dll
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\bin\Debug\net6.0\TemporaryTask1.pdb
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\obj\Debug\net6.0\TemporaryTask1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\obj\Debug\net6.0\TemporaryTask1.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\obj\Debug\net6.0\TemporaryTask1.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\obj\Debug\net6.0\TemporaryTask1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\obj\Debug\net6.0\TemporaryTask1.dll
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\obj\Debug\net6.0\ref\TemporaryTask1.dll
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\obj\Debug\net6.0\TemporaryTask1.pdb
+C:\Users\Admin\Desktop\Shiam\csPrograms\RandomTask\TemporaryTask1\TemporaryTask1\obj\Debug\net6.0\TemporaryTask1.genruntimeconfig.cache

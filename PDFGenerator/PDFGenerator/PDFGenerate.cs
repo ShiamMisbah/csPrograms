@@ -20,10 +20,13 @@ namespace PDFGenerator
             //graphics and stuffs
             XGraphics gfx = XGraphics.FromPdfPage(page);
             //font
+            XPdfFontOptions options = new XPdfFontOptions(PdfFontEncoding.Unicode);
+
             XFont FontID = new XFont("Arial", 16);
             XFont FontName = new XFont("Arial", 16);
             XFont Font = new XFont("Arial", 14);
             XFont HeadingFont = new XFont("Arial", 24);
+            XFont BanglaFont = new XFont("Vrinda", 14);
 
             //Margin Set ups
             int LeftM = 50;
@@ -94,7 +97,7 @@ namespace PDFGenerator
             gfx.DrawString(Convert.ToString(DateOfBirth), Font, XBrushes.Black,
                 new XPoint(RightColumnM, BottomInfoStart + VerticalGap*4));
 
-            gfx.DrawString("Title: ", Font, XBrushes.Black,
+            gfx.DrawString("Title: ", BanglaFont, XBrushes.Black,
                 new XPoint(LeftColumnM, BottomInfoStart + VerticalGap*5));
             gfx.DrawString(Convert.ToString(Title), Font, XBrushes.Black,
                 new XPoint(RightColumnM, BottomInfoStart + VerticalGap*5));
