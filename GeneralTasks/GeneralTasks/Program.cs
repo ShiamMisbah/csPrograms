@@ -81,4 +81,48 @@ int[] l = {2,1,5,3,13,5,6,5,2,4,7,2,3,9,8,4,1,2,5};
 
 //FindOccurence(l, 5, 2);
 
+static void DuplicateZeros(int[] arr)
+{
+    int count = 0;
+    List<int> arr2 = new List<int>();
+    foreach (int num in arr)
+    {
+        if (num == 0)
+        {
+            arr2.Add(num);
+            arr2.Add(num);
+        }
+        else
+        {
+            arr2.Add(num);
+        }
+    }
+    int[] arr3 = arr2.ToArray();
+    for (int i = 0; i<arr.Length; i++)
+    {
+        arr[i] = arr3[i];
+    }
+
+}
+
+
+static int RemoveElement(int[] nums, int val)
+{
+    int k = 0;
+    int length = nums.Length;
+    for (int i = 0; i< length; i++)
+    {
+        if (nums[i]==val)
+        {
+            length--;
+            for (int j = i; j< length; j++)
+            {
+                nums[j] = nums[j+1];
+            }
+            i--;
+            k++;
+        }
+    }
+    return (nums.Length-k);
+}
 
