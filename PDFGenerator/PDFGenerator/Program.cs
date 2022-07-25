@@ -24,7 +24,7 @@ ReadFile();
 
 static void ReadFile()
 {
-    string dir = @"C:\Users\Admin\Desktop\Shiam\csPrograms\PDFGenerator\PDF\";
+    string dir = @"..\..\..\..\PDF";
 
     var csvFileDescription = new CsvFileDescription
     {
@@ -35,7 +35,7 @@ static void ReadFile()
     };
 
     var csvContext = new CsvContext();
-    var student = csvContext.Read<StudentInfo>(@"C:\Users\Admin\Desktop\Shiam\csPrograms\PDFGenerator\PDF\students.csv", csvFileDescription);
+    var student = csvContext.Read<StudentInfo>(@"..\..\..\..\PDF\students.csv", csvFileDescription);
     
     List<StudentClass> studentClassesList = new List<StudentClass>();   
 

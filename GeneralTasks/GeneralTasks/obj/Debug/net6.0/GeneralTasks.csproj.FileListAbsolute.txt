@@ -28,3 +28,14 @@ C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\obj
 C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.pdb
 C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\obj\Debug\net6.0\ref\GeneralTasks.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\bin\Debug\net6.0\IronXL.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\bin\Debug\net6.0\PdfSharp.Charting.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\bin\Debug\net6.0\PdfSharp.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\bin\Debug\net6.0\de\PdfSharp.Charting.resources.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\bin\Debug\net6.0\de\PdfSharp.resources.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\obj\Debug\net6.0\GeneralTasks.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Administrator\Desktop\Shiam\C#\csPrograms\GeneralTasks\GeneralTasks\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll

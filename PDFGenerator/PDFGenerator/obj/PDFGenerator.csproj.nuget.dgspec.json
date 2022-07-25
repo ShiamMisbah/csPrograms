@@ -42,11 +42,27 @@
           "dependencies": {
             "BarCode": {
               "target": "Package",
-              "version": "[2022.5.5918, )"
+              "version": "[2022.7.7345, )"
+            },
+            "HtmlRenderer.Core": {
+              "target": "Package",
+              "version": "[1.5.0.6, )"
+            },
+            "HtmlRenderer.PdfSharp": {
+              "target": "Package",
+              "version": "[1.5.0.6, )"
+            },
+            "IronPdf": {
+              "target": "Package",
+              "version": "[2022.7.6986, )"
             },
             "LinqToCsv": {
               "target": "Package",
               "version": "[1.5.0, )"
+            },
+            "PDF.Core": {
+              "target": "Package",
+              "version": "[2020.12.2, )"
             },
             "PdfSharp": {
               "target": "Package",
