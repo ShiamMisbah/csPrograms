@@ -9,29 +9,29 @@ namespace PDFGenerator
 {
     class StudentInfo
     {
-        [CsvColumn(Name = "ApplicationCode")]
-        public int ApplicationCode { get; set; }
+        //[CsvColumn(Name = "ApplicationCode")]
+        //public int ApplicationCode { get; set; }
 
-        [CsvColumn(Name = "Name")]
-        public string Name { get; set; }
+        //[CsvColumn(Name = "Name")]
+        //public string Name { get; set; }
 
-        [CsvColumn(Name = "Mobile")]
-        public int Mobile { get; set; }
+        //[CsvColumn(Name = "Mobile")]
+        //public int Mobile { get; set; }
 
-        [CsvColumn(Name = "Email")]
-        public string Email { get; set; }
+        //[CsvColumn(Name = "Email")]
+        //public string Email { get; set; }
 
-        //[CsvColumn(Name = "Father Name")]
-        //public string FatherName { get; set; }
-        //[CsvColumn(Name = "Mother Name")]
-        //public string MotherName { get; set; }
-        [CsvColumn (Name = "DateOfBirth")]
-        public string DateOfBirth { get; set; }
+        ////[CsvColumn(Name = "Father Name")]
+        ////public string FatherName { get; set; }
+        ////[CsvColumn(Name = "Mother Name")]
+        ////public string MotherName { get; set; }
+        //[CsvColumn (Name = "DateOfBirth")]
+        //public string DateOfBirth { get; set; }
 
-        [CsvColumn (Name = "Title")]
-        public string Title { get; set; }
-        [CsvColumn(Name = "DocumentName")]
-        public string DocumentName { get; set; }
+        //[CsvColumn (Name = "Title")]
+        //public string Title { get; set; }
+        //[CsvColumn(Name = "DocumentName")]
+        //public string DocumentName { get; set; }
         //[CsvColumn(Name = "Address")]
         //public string Address { get; set; }
         //[CsvColumn(Name = "Religion")]
@@ -39,5 +39,22 @@ namespace PDFGenerator
         //[CsvColumn(Name = "Nationality")]
         //public string Nationality { get; set; }
 
+        [CsvColumn(Name = "ID")]
+        public int ID { get; set; }
+
+        [CsvColumn(Name = "Name")]
+        public string Name { get; set; }
+
+        [CsvColumn(Name = "Father_Name")]
+        public string FatherName { get; set; }
+
+        [CsvColumn(Name = "Mother_Name")]
+        public string MotherName { get; set; }
+
+        [CsvColumn(Name = "Exam_Center")]
+        public string ExamCenter { get; set; }
+
+        [CsvColumn(Name = "District")]
+        public string District { get; set; }
     }
 }

@@ -35,14 +35,14 @@ static void ReadFile()
     };
 
     var csvContext = new CsvContext();
-    var student = csvContext.Read<StudentInfo>(@"..\..\..\..\PDF\students.csv", csvFileDescription);
+    var student = csvContext.Read<StudentInfo>(@"..\..\..\..\PDF\Recruitment.csv", csvFileDescription);
     
     //List<StudentClass> studentClassesList = new List<StudentClass>();   
 
     foreach (var studentInfo in student)
     {
         //studentClassesList.Add(new StudentClass(studentInfo.ID, studentInfo.Name, studentInfo.Phone, studentInfo.email, studentInfo.FatherName, studentInfo.MotherName, studentInfo.DateOfBirth, studentInfo.Address, studentInfo.Religion, studentInfo.Nationality));
-        PDFGenerate.BarcodePDFGenerator(dir, studentInfo.ApplicationCode, studentInfo.Name, studentInfo.Mobile, studentInfo.Email,studentInfo.DateOfBirth, studentInfo.DocumentName, studentInfo.Title);
+        PDFGenerate.PDFGenerator(dir, studentInfo.ID, /*studentInfo.ApplicationCode,*/ studentInfo.Name, studentInfo.FatherName, studentInfo.MotherName, studentInfo.ExamCenter, studentInfo.District /*studentInfo.Mobile, studentInfo.Email,studentInfo.DateOfBirth, studentInfo.DocumentName, studentInfo.Title*/);
     };
 }
 
