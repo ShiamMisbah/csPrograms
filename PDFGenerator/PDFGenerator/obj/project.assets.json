@@ -1246,19 +1246,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Tester\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
+      "projectUniqueName": "C:\\Users\\Tester\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
       "projectName": "PDFGenerator",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\obj\\",
+      "projectPath": "C:\\Users\\Tester\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
+      "packagesPath": "C:\\Users\\Tester\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tester\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tester\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
