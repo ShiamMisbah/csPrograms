@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tester\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tester\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tester\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
         "projectName": "PDFGenerator",
-        "projectPath": "C:\\Users\\Tester\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
-        "packagesPath": "C:\\Users\\Tester\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tester\\Desktop\\Shiam\\csPrograms\\PDFGenerator\\PDFGenerator\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Shiam\\C#\\csPrograms\\PDFGenerator\\PDFGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tester\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,14 +44,6 @@
               "target": "Package",
               "version": "[2022.7.7345, )"
             },
-            "HtmlRenderer.Core": {
-              "target": "Package",
-              "version": "[1.5.0.6, )"
-            },
-            "HtmlRenderer.PdfSharp": {
-              "target": "Package",
-              "version": "[1.5.0.6, )"
-            },
             "IronPdf": {
               "target": "Package",
               "version": "[2022.7.6986, )"
@@ -67,6 +59,14 @@
             "PdfSharp": {
               "target": "Package",
               "version": "[1.50.5147, )"
+            },
+            "Select.HtmlToPdf": {
+              "target": "Package",
+              "version": "[22.1.0, )"
+            },
+            "Select.HtmlToPdf.NetCore": {
+              "target": "Package",
+              "version": "[22.1.0, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

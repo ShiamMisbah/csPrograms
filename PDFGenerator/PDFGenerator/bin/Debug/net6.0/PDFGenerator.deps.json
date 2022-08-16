@@ -9,12 +9,12 @@
       "PDFGenerator/1.0.0": {
         "dependencies": {
           "BarCode": "2022.7.7345",
-          "HtmlRenderer.Core": "1.5.0.6",
-          "HtmlRenderer.PdfSharp": "1.5.0.6",
           "IronPdf": "2022.7.6986",
           "LINQtoCSV": "1.5.0",
           "PDF.Core": "2020.12.2",
           "PDFsharp": "1.50.5147",
+          "Select.HtmlToPdf": "22.1.0",
+          "Select.HtmlToPdf.NetCore": "22.1.0",
           "System.Drawing.Common": "6.0.0",
           "System.Text.Encoding.CodePages": "6.0.0"
         },
@@ -30,26 +30,6 @@
           "lib/netstandard2.0/IronBarCode.dll": {
             "assemblyVersion": "2022.7.0.7345",
             "fileVersion": "2022.7.0.7345"
-          }
-        }
-      },
-      "HtmlRenderer.Core/1.5.0.6": {
-        "runtime": {
-          "lib/net45/HtmlRenderer.dll": {
-            "assemblyVersion": "1.5.0.6",
-            "fileVersion": "1.5.0.6"
-          }
-        }
-      },
-      "HtmlRenderer.PdfSharp/1.5.0.6": {
-        "dependencies": {
-          "HtmlRenderer.Core": "1.5.0.6",
-          "PDFsharp": "1.50.5147"
-        },
-        "runtime": {
-          "lib/net45/HtmlRenderer.PdfSharp.dll": {
-            "assemblyVersion": "1.5.0.6",
-            "fileVersion": "1.5.0.6"
           }
         }
       },
@@ -828,6 +808,14 @@
           }
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging.Abstractions/2.1.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -836,6 +824,7 @@
           }
         }
       },
+      "Microsoft.NETCore.Platforms/2.0.0": {},
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "runtime": {
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
@@ -849,6 +838,14 @@
             "assetType": "runtime",
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
           }
         }
       },
@@ -877,6 +874,26 @@
           }
         }
       },
+      "Select.HtmlToPdf/22.1.0": {},
+      "Select.HtmlToPdf.NetCore/22.1.0": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
+          "Newtonsoft.Json": "12.0.1",
+          "System.Buffers": "4.5.0",
+          "System.Drawing.Common": "6.0.0",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Security.Principal.Windows": "4.5.1",
+          "System.Text.Encoding.CodePages": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Select.HtmlToPdf.dll": {
+            "assemblyVersion": "22.1.0.0",
+            "fileVersion": "22.1.0.0"
+          }
+        }
+      },
+      "System.Buffers/4.5.0": {},
       "System.Drawing.Common/6.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "6.0.0"
@@ -902,12 +919,19 @@
           }
         }
       },
+      "System.Numerics.Vectors/4.5.0": {},
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Security.Principal.Windows/4.5.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        }
+      },
       "System.Text.Encoding.CodePages/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
-      }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {}
     }
   },
   "libraries": {
@@ -922,20 +946,6 @@
       "sha512": "sha512-2zPwTGDY4QQiiLCd1EH5/7wt8qj9BgsR91IU5HMxAawURJj0ePwfoeJFe9FrN1JIcdNxsOq5HBANIGrnkI1lLQ==",
       "path": "barcode/2022.7.7345",
       "hashPath": "barcode.2022.7.7345.nupkg.sha512"
-    },
-    "HtmlRenderer.Core/1.5.0.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-/WPVhzNmILIOJ1vtoiQXP7y7MJirCpHn/jqFw38wU0vv1XXbSpR2bTStmaiI2Pb2JLjnPMrVGR/7T7zKlAaaHw==",
-      "path": "htmlrenderer.core/1.5.0.6",
-      "hashPath": "htmlrenderer.core.1.5.0.6.nupkg.sha512"
-    },
-    "HtmlRenderer.PdfSharp/1.5.0.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uk2lzFa/0zQSk8im2CX8ROXlqy8YAJUG28b5/G8wa0YNdO6+04bEl3iZCaThkcyNWnnIsHCn5hWR3vZjc6JhmA==",
-      "path": "htmlrenderer.pdfsharp/1.5.0.6",
-      "hashPath": "htmlrenderer.pdfsharp.1.5.0.6.nupkg.sha512"
     },
     "IronPdf/2022.7.6986": {
       "type": "package",
@@ -965,6 +975,13 @@
       "path": "linqtocsv/1.5.0",
       "hashPath": "linqtocsv.1.5.0.nupkg.sha512"
     },
+    "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging.Abstractions/2.1.0": {
       "type": "package",
       "serviceable": true,
@@ -972,12 +989,26 @@
       "path": "microsoft.extensions.logging.abstractions/2.1.0",
       "hashPath": "microsoft.extensions.logging.abstractions.2.1.0.nupkg.sha512"
     },
+    "Microsoft.NETCore.Platforms/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "path": "microsoft.netcore.platforms/2.0.0",
+      "hashPath": "microsoft.netcore.platforms.2.0.0.nupkg.sha512"
+    },
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
     },
     "PDF.Core/2020.12.2": {
       "type": "package",
@@ -993,12 +1024,40 @@
       "path": "pdfsharp/1.50.5147",
       "hashPath": "pdfsharp.1.50.5147.nupkg.sha512"
     },
+    "Select.HtmlToPdf/22.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1XCebWClE6ULrimYhq0TL3Ty2V3UwID9j25fvwFtsZmfbDlJr9wjdu2f4xqeCKQzfBBwyb4VZ+t7gvWigk8M1A==",
+      "path": "select.htmltopdf/22.1.0",
+      "hashPath": "select.htmltopdf.22.1.0.nupkg.sha512"
+    },
+    "Select.HtmlToPdf.NetCore/22.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ak9XWcyF2r0wHb58frwT6nIxuif9+H5ZCFeDGIZbL2571J3qnCYrRyAOufX4a1yNZ59udhYfKMDBSYmCnx9uqQ==",
+      "path": "select.htmltopdf.netcore/22.1.0",
+      "hashPath": "select.htmltopdf.netcore.22.1.0.nupkg.sha512"
+    },
+    "System.Buffers/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
+      "path": "system.buffers/4.5.0",
+      "hashPath": "system.buffers.4.5.0.nupkg.sha512"
+    },
     "System.Drawing.Common/6.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
       "path": "system.drawing.common/6.0.0",
       "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "type": "package",
@@ -1007,12 +1066,26 @@
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
+    "System.Security.Principal.Windows/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L3R/xk1s+AJB/ZRrwXyjXMmKp+RNgLP92LSidWEM0iCouznJoiiBloDCxRTjmo8hTDAKSWaMrltsttUzg1RhjA==",
+      "path": "system.security.principal.windows/4.5.1",
+      "hashPath": "system.security.principal.windows.4.5.1.nupkg.sha512"
+    },
     "System.Text.Encoding.CodePages/6.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
       "path": "system.text.encoding.codepages/6.0.0",
       "hashPath": "system.text.encoding.codepages.6.0.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
+      "path": "system.threading.tasks.extensions/4.5.2",
+      "hashPath": "system.threading.tasks.extensions.4.5.2.nupkg.sha512"
     }
   }
 }
