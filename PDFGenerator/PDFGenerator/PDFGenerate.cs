@@ -98,72 +98,74 @@ namespace PDFGenerator
             //File.WriteAllText(HtmlDes, htmlText);
             var htmltopdf = new HtmlToPdf();
             //htmltopdf.ConvertHtmlString(strVar).Save(PdfDest);
-            htmltopdf.ConvertUrl(@"../../../../admitCard.html");
-            //var pdfDoc =htmltopdf.ConvertUrl("https://ninite.com/everything/");
+            var url = "../../../../admitCard.html";
+            var testPath = Path.GetFullPath(url);
+            htmltopdf.ConvertUrl(testPath).Save(PdfDest);
+            //htmltopdf.ConvertUrl("https://ninite.com/everything/").Save(PdfDest);
             //var pdfDoc = htmltopdf.ConvertHtmlString(strVar);
             //pdfDoc.Save(PdfDest);
 
             //Add Dynamic images to the generated PDF
 
-            PdfSharp.Pdf.PdfDocument pdfDoc2 = PdfReader.Open(PdfDest, PdfDocumentOpenMode.Modify);
-            PdfSharp.Pdf.PdfPage page = pdfDoc2.Pages[0];
+            //PdfSharp.Pdf.PdfDocument pdfDoc2 = PdfReader.Open(PdfDest, PdfDocumentOpenMode.Modify);
+            //PdfSharp.Pdf.PdfPage page = pdfDoc2.Pages[0];
 
 
-            //PdfDocument document = PdfGenerator.GeneratePdf(htmlText, PdfSharp.PageSize.A4);
+            ////PdfDocument document = PdfGenerator.GeneratePdf(htmlText, PdfSharp.PageSize.A4);
 
-            //document.Save(SrcDir + ID +".pdf");
-            //New page
+            ////document.Save(SrcDir + ID +".pdf");
+            ////New page
 
-            ////graphics and stuffs
-            XGraphics gfx = XGraphics.FromPdfPage(page);
-            ////font
-            //XFont FontID = new XFont("Arial", 16);
-            //XFont FontName = new XFont("Arial", 16);
-            //XFont Font = new XFont("Arial", 14);
-            //XFont HeadingFont = new XFont("Arial", 24);
+            //////graphics and stuffs
+            //XGraphics gfx = XGraphics.FromPdfPage(page);
+            //////font
+            ////XFont FontID = new XFont("Arial", 16);
+            ////XFont FontName = new XFont("Arial", 16);
+            ////XFont Font = new XFont("Arial", 14);
+            ////XFont HeadingFont = new XFont("Arial", 24);
 
-            //Margin Set ups
-            int LeftM = 92;
-            int RightM = 50;
-            int TopM = 160;
-            int BottomInfoStart = TopM + 20;
-            int VerticalGap = 30;
-            int LogoSize = 58;
-            int LeftColumnStartX = LeftM;
-            int LeftColumnWidth = 125;
-            int RightColumnStartX = LeftColumnStartX + LeftColumnWidth;
-            int RightColumnWidth = 250;
+            ////Margin Set ups
+            //int LeftM = 92;
+            //int RightM = 50;
+            //int TopM = 160;
+            //int BottomInfoStart = TopM + 20;
+            //int VerticalGap = 30;
+            //int LogoSize = 58;
+            //int LeftColumnStartX = LeftM;
+            //int LeftColumnWidth = 125;
+            //int RightColumnStartX = LeftColumnStartX + LeftColumnWidth;
+            //int RightColumnWidth = 250;
 
-            ////XPen pen = new XPen(XColors.White, 0);
-            //int height = 20;
-            //XPen pen2 = new XPen(XColors.White, 100);
-            //gfx.DrawRectangle(pen2, 0, page.Height-height, page.Width, height);
+            //////XPen pen = new XPen(XColors.White, 0);
+            ////int height = 20;
+            ////XPen pen2 = new XPen(XColors.White, 100);
+            ////gfx.DrawRectangle(pen2, 0, page.Height-height, page.Width, height);
 
-            //Logo
-            XImage Logo = XImage.FromFile(@"..\..\..\..\PDF\Images\login_logo.jpg");
-            gfx.DrawImage(Logo, LeftM + 15 , 19, LogoSize, LogoSize);
+            ////Logo
+            //XImage Logo = XImage.FromFile(@"..\..\..\..\PDF\Images\login_logo.jpg");
+            //gfx.DrawImage(Logo, LeftM + 15 , 19, LogoSize, LogoSize);
             
 
 
-            XImage ImgProfile = XImage.FromFile(@"..\..\..\..\PDF\Images\shk_old.png");
-            int ProfileImgSize = 80;
-            gfx.DrawImage(ImgProfile, page.Width - RightM - 152, TopM, ProfileImgSize, ProfileImgSize+20);
+            //XImage ImgProfile = XImage.FromFile(@"..\..\..\..\PDF\Images\shk_old.png");
+            //int ProfileImgSize = 80;
+            //gfx.DrawImage(ImgProfile, page.Width - RightM - 152, TopM, ProfileImgSize, ProfileImgSize+20);
 
             
 
-            int BarCodeWidth = 110;
+            //int BarCodeWidth = 110;
 
-            XImage ImgBarcode = XImage.FromFile(BarcodeGenerator.GenerateBarcode(BarNum, SrcDir));
-            gfx.DrawImage(ImgBarcode, page.Width - RightM - 166 , TopM + 124, BarCodeWidth, 30);
+            //XImage ImgBarcode = XImage.FromFile(BarcodeGenerator.GenerateBarcode(BarNum, SrcDir));
+            //gfx.DrawImage(ImgBarcode, page.Width - RightM - 166 , TopM + 124, BarCodeWidth, 30);
 
-            XImage ImgSignature = XImage.FromFile(@"..\..\..\..\PDF\Images\Signature.JPEG");
-            int SignatureImgSize = 30;
-            gfx.DrawImage(ImgSignature, LeftM + 20 , TopM + 125, SignatureImgSize + 100, SignatureImgSize);
-            //page.Width - RightM - 152
-            ////XPen pen = new XPen(XColors.Black, 1);
-            ////gfx.DrawRectangle(pen, 10, 0, 100, 60);
-            ///
-            pdfDoc2.Save(PdfDest);
+            //XImage ImgSignature = XImage.FromFile(@"..\..\..\..\PDF\Images\Signature.JPEG");
+            //int SignatureImgSize = 30;
+            //gfx.DrawImage(ImgSignature, LeftM + 20 , TopM + 125, SignatureImgSize + 100, SignatureImgSize);
+            ////page.Width - RightM - 152
+            //////XPen pen = new XPen(XColors.Black, 1);
+            //////gfx.DrawRectangle(pen, 10, 0, 100, 60);
+            /////
+            //pdfDoc2.Save(PdfDest);
 
             //PdfSharp.Pdf.PdfDocument inputDocument = PdfReader.Open(PdfDest, PdfDocumentOpenMode.Import);
             ////new Document
