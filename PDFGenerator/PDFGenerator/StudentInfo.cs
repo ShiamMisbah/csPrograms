@@ -39,22 +39,25 @@ namespace PDFGenerator
         //[CsvColumn(Name = "Nationality")]
         //public string Nationality { get; set; }
 
-        [CsvColumn(Name = "ID")]
-        public int ID { get; set; }
+        [CsvColumn(Name = "user")]
+        public string applicationCode { get; set; }
 
-        [CsvColumn(Name = "Name")]
+        [CsvColumn(Name = "persoanl_info_applicants_name")]
         public string Name { get; set; }
 
-        [CsvColumn(Name = "Father_Name")]
+        [CsvColumn(Name = "persoanl_info_fathers_name")]
         public string FatherName { get; set; }
 
-        [CsvColumn(Name = "Mother_Name")]
+        [CsvColumn(Name = "persoanl_info_mothers_name")]
         public string MotherName { get; set; }
 
-        [CsvColumn(Name = "Exam_Center")]
-        public string ExamCenter { get; set; }
+        //[CsvColumn(Name = "Exam_Center")]
+        //public string ExamCenter { get; set; }
 
-        [CsvColumn(Name = "District")]
+        [CsvColumn(Name = "personal_info_place_of_birth")]
         public string District { get; set; }
+
+        [CsvColumn(Name = "post_name")]
+        public string Post_name { get; set; }
     }
 }

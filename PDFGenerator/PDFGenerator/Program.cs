@@ -35,14 +35,14 @@ static void ReadFile()
     };
 
     var csvContext = new CsvContext();
-    var student = csvContext.Read<StudentInfo>(@"..\..\..\..\PDF\Recruitment.csv", csvFileDescription);
+    var student = csvContext.Read<StudentInfo>(@"..\..\..\..\PDF\pwd_merged_cinfo_Test.csv", csvFileDescription);
     
     //List<StudentClass> studentClassesList = new List<StudentClass>();   
 
     foreach (var studentInfo in student)
     {
         //studentClassesList.Add(new StudentClass(studentInfo.ID, studentInfo.Name, studentInfo.Phone, studentInfo.email, studentInfo.FatherName, studentInfo.MotherName, studentInfo.DateOfBirth, studentInfo.Address, studentInfo.Religion, studentInfo.Nationality));
-        PDFGenerate.PDFGenerator(dir, studentInfo.ID, /*studentInfo.ApplicationCode,*/ studentInfo.Name, studentInfo.FatherName, studentInfo.MotherName, studentInfo.ExamCenter, studentInfo.District /*studentInfo.Mobile, studentInfo.Email,studentInfo.DateOfBirth, studentInfo.DocumentName, studentInfo.Title*/);
+        PDFGenerate.PDFGenerator(dir, studentInfo.applicationCode, studentInfo.Name, studentInfo.FatherName, studentInfo.MotherName,studentInfo.District, studentInfo.Post_name);
     };
 }
 
